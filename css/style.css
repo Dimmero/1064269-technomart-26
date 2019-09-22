@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.header-top-wrapper {
+  background-color: #293449;  
+}
+
+.header-link {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.header-link:hover,
+.header-link:focus {
+  background-color: #212a3a;
+}
+
+.header-link:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.order {
+  background-color: #63a63e;
+}
+
+.order:hover,
+.order:focus {
+  background-color: #5fbb2d;
+}
+
+.order:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #518534;
+}
+
+.search-input {
+  font: inherit;
+  background-color: transparent;
+  border: none;
+  color: #000000;
+}
+
+.search-input::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+}
+
+.search-input:hover {
+  background-color: #212a3a;
+}
+
+.search-input:active {
+  background-color: transparent;
+}
+
+.search-input:focus {
+  background-color: #ffffff;
+}
+
+.logo {
+  background-color: #ee3643;
+  box-shadow: inset 0 -5px #b52933;
+}
+
+.logo:hover,
+.logo:focus {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+/*
+.header-top {
+	display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.header-top > a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  padding-top: 10px;
+ 
+}
+*/
+
+.header-top .bookmarks:hover,
+.header-top .cart:hover,
+.header-top .bookmarks:focus,
+.header-top .bookmarks:focus {
+ background-color: #212a3a;
+}
+
+.header-nav {
+  list-style: none;
+}
+
+.header-nav a {
+  text-decoration: none;
+  font-family: "Cuprum";
+  font-size: 17px;
+  color: #ffffff;
+  
+}
+
+.main-navigation {
+	background-color: #32425c;
+
+}

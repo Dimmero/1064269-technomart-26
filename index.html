@@ -3,23 +3,29 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet"> 
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <div class="header-top">
-        <a class="logo" href="/">
-          <img src="img/logo.svg" alt="Логотип компании Техномарт">
-        </a>
-        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <button class="button button-search" type="submit"></button>
-          <input class="search-input" type="text" name="search" placeholder="Поиск:">
-        </form>  
-      <!--Здесь будет форма поиска-->
-        <a class="bookmarks" href="">Закладки</a>
-        <a class="cart" href="">Корзина</a>
-        <a class="order" href="">Оформить заказ</a>
-      </div>
-
+      <div class="header-top-wrapper">		
+		    <div class="header-top container">
+		      <a class="logo" href="/">
+		        <img src="img/logo.svg" width="136" height="21" alt="Логотип компании Техномарт">
+		      </a>
+		  <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+		    <label for="search-form">		
+		      <a class="link-search" href=""></a>
+		  	</label>
+		    <input class="search-input" type="text" name="search" id="search-form" placeholder="Поиск:">
+		  </form>  
+		   <a class="bookmarks header-link" href="">Закладки</a>
+		   <a class="cart header-link" href="">Корзина</a>
+		   <a class="order header-link" href="">Оформить заказ</a>
+		</div>
+	  </div>  
       <div class="header-middle">
         <div class="header-middle-description">
           <h1>Интернет магазин строительных материалов и инструментов для ремонта</h1>
@@ -33,15 +39,15 @@
         <li><a href="">Войти</a></li>
         <li><a href="">Регистрация</a></li>
       </ul>
-      <nav>
+      <nav class="main-navigation">
         <ul class="header-nav">
           <li><a class="header-nav-link" href="index.html">Главная</a></li>
-          <li><a class="header-nav-link" href="about-us.html">Компания</a></li>
-          <li><a class="header-nav-link" href="catalog.html">Каталог</a></li>
-          <li><a class="header-nav-link" href="news.html">Новости</a></li>
-          <li><a class="header-nav-link" href="special-offer.html">Спецпредложения</a></li>
-          <li><a class="header-nav-link" href="delivery.html">Доставка</a></li>
-          <li><a class="header-nav-link" href="contacts.html">Контакты</a></li>
+          <li><a class="header-nav-link" href="">Компания</a></li>
+          <li><a class="header-nav-link" href="">Каталог</a></li>
+          <li><a class="header-nav-link" href="">Новости</a></li>
+          <li><a class="header-nav-link" href="">Спецпредложения</a></li>
+          <li><a class="header-nav-link" href="">Доставка</a></li>
+          <li><a class="header-nav-link" href="">Контакты</a></li>
         </ul>
       </nav>
     </header>
