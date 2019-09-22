@@ -12,6 +12,10 @@ a {
   text-decoration: none;
 }
 
+header {
+  background-color: #f4f7f9;
+}
+
 .container {
 	width: 940px;
 	margin: 0 auto;
@@ -108,26 +112,106 @@ a {
 }
 */
 
-.header-top .bookmarks:hover,
-.header-top .cart:hover,
-.header-top .bookmarks:focus,
-.header-top .bookmarks:focus {
- background-color: #212a3a;
+.header-middle-text {
+  font-family: Cuprum;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.contact-info {
+  list-style: none;
+}
+
+.contact-tel-link {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  border: 3px solid #ffffff;
+}
+
+.contact-tel-link:focus {
+  background-color: #f3f7f9;
+}
+
+.contact-address {
+  font-family: Cuprum;
+  font-weight: 14px;
+  line-height: 24px;
+  color: #32425c;
+}
+
+.contact-address:focus {
+  background-color: #f3f7f9; 
+}
+
+.account {
+  list-style: none;
+}
+
+.login-link {
+  font-family: Cuprum;
+  font-weight: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.login {
+  background-color: #ffffff;
+}
+
+.registration {
+  background-color: #ffffff;
+}
+
+.registration-link {
+   font-family: Cuprum;
+  font-weight: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.login-link:hover,
+.registration-link:hover {
+  color: #ee3643;
+}
+
+.login-link:active,
+.registration-link:active {
+  color: #cacaca;
 }
 
 .header-nav {
   list-style: none;
 }
 
-.header-nav a {
-  text-decoration: none;
-  font-family: "Cuprum";
-  font-size: 17px;
+.main-nav {
+  background-color: #32425c;
+  box-shadow: inset 0 -5px #293449;
+}
+
+.header-nav-link {
+  font-family: Cuprum;
+  font-weight: 17px;
+  line-height: 17px;
   color: #ffffff;
-  
 }
 
-.main-navigation {
-	background-color: #32425c;
-
+.header-nav-link:hover {
+  background-color: #293449;
 }
+
+.header-nav-link:active {
+  background-color: #1d2739;
+  color: #a8abaf;
+}
+
+
+
+
+
+
+
+
