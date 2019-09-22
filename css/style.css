@@ -208,6 +208,64 @@ header {
   color: #a8abaf;
 }
 
+.info-contacts {
+  background-color: #ffffff;
+}
+
+.info,
+.contacts-map {
+  font-family: Cuprum;
+  font-weight: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.info-text { 
+  font-weight: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.company {
+  font-family: Cuprum;
+  font-weight: 18px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.more-about-company {
+  font-family: Cuprum;
+  font-weight: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.btn {
+  font-family: Cuprum;
+  font-weight: 30px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.red-button {
+  border: 3px solid #ee3643;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
