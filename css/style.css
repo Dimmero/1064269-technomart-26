@@ -253,6 +253,40 @@ header {
   border-radius: 3px;
 }
 
+.footer-address {
+  font-family: Cuprum;
+  font-weight: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-nav-list {
+  list-style: none;
+} 
+
+.footer-nav-link {
+   font-family: Cuprum;
+  font-weight: 18px;
+  line-height: 24px;
+  color: #f1f5f7;
+}
+
+.bottom .footer-nav-link {
+  color: #ffd180;
+}
+
+.footer-top-middle {
+  background-color: #32425c;
+}
+
+
+
+
+
+
+
+
+
 
 
 
