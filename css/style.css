@@ -138,7 +138,7 @@ header {
 
 .contact-address {
   font-family: Cuprum;
-  font-weight: 14px;
+  font-size: 14px;
   line-height: 24px;
   color: #32425c;
 }
@@ -153,7 +153,7 @@ header {
 
 .login-link {
   font-family: Cuprum;
-  font-weight: 21px;
+  font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
@@ -167,8 +167,8 @@ header {
 }
 
 .registration-link {
-   font-family: Cuprum;
-  font-weight: 21px;
+  font-family: Cuprum;
+  font-size: 21px;
   line-height: 21px;
   color: #000000;
 }
@@ -183,6 +183,44 @@ header {
   color: #cacaca;
 }
 
+.login-field {
+  list-style: none;
+}
+
+.login {
+  background-color: #ffffff;
+}
+
+.login-name {
+  font-family: Cuprum;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.login-name:active {
+  color: #cacaca;
+}
+
+.my-orders,
+.account {
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.my-orders:hover,
+.account:hover {
+  color: #ee3643;
+}
+
+.my-orders:active,
+.account:active {
+  color: #cacaca;
+}
+
 .header-nav {
   list-style: none;
 }
@@ -194,7 +232,7 @@ header {
 
 .header-nav-link {
   font-family: Cuprum;
-  font-weight: 17px;
+  font-size: 17px;
   line-height: 17px;
   color: #ffffff;
 }
@@ -215,35 +253,35 @@ header {
 .info,
 .contacts-map {
   font-family: Cuprum;
-  font-weight: 30px;
+  font-size: 30px;
   line-height: 30px;
   color: #000000;
 }
 
 .info-text { 
-  font-weight: 13px;
+  font-size: 13px;
   line-height: 24px;
   color: #000000;
 }
 
 .company {
   font-family: Cuprum;
-  font-weight: 18px;
+  font-size: 18px;
   line-height: 20px;
   color: #000000;
 }
 
 .more-about-company {
   font-family: Cuprum;
-  font-weight: 14px;
+  font-size: 14px;
   line-height: 18px;
   color: #ffffff;
 }
 
 .btn {
   font-family: Cuprum;
-  font-weight: 30px;
-  line-height: 30px;
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
 }
 
@@ -255,7 +293,7 @@ header {
 
 .footer-address {
   font-family: Cuprum;
-  font-weight: 18px;
+  font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
 }
@@ -266,7 +304,7 @@ header {
 
 .footer-nav-link {
    font-family: Cuprum;
-  font-weight: 18px;
+  font-size: 18px;
   line-height: 24px;
   color: #f1f5f7;
 }
@@ -297,7 +335,7 @@ header {
 
 .copyright-text {
   font-family: Cuprum;
-  font-weight: 16px;
+  font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
@@ -312,26 +350,89 @@ header {
 
 .feedback-text {
   font-family: Cuprum;
-  font-weight: 16px;
+  font-size: 16px;
   line-height: 18px;
   color: #ffffff;
 }
 
 .feedback a {
   font-family: Cuprum;
-  font-weight: 16px;
+  font-size: 16px;
   line-height: 18px;
   color: #ffd180;
 }
 
+.feedback-link:hover {
+  text-decoration: underline;
+}
+
+.feedback-link:active {
+  color: #ee3643;
+}
 
 
+/*STYLES FOR CATALOG.HTML*/
 
+.breadcrumbs {
+  list-style: none;
+}
 
+.breadcrumbs a,
+.breadcrumbs-current {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
 
+.page-title {
+  background-color: #f2f6f8;
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+}
 
+.filter-form fieldset {
+  border: none;
+}
 
+.filter-form legend {
+  font-family: "PT Sans";
+  font-size: 17px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
 
+.filter-option {
+  list-style: none;
+}
+
+form label {
+  font-family: "PT Sans";
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+/*CATALOG-ITEMS*/
+
+.visually-hidden {
+  display: none;
+}
 
 
 
