@@ -275,9 +275,57 @@ header {
   color: #ffd180;
 }
 
+.footer-nav-link:hover {
+  text-decoration: underline;
+}
+
+.top .footer-nav-link:active {
+  color: #a4abb4;
+}
+
+.bottom .footer-nav-link:active {
+  color: #ad956f;
+}
+
 .footer-top-middle {
   background-color: #32425c;
 }
+
+.footer-bottom {
+  background-color: #293449;
+}
+
+.copyright-text {
+  font-family: Cuprum;
+  font-weight: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.social-media-list {
+  list-style: none;
+}
+
+.social {
+  background-color: #212a3a;
+}
+
+.feedback-text {
+  font-family: Cuprum;
+  font-weight: 16px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.feedback a {
+  font-family: Cuprum;
+  font-weight: 16px;
+  line-height: 18px;
+  color: #ffd180;
+}
+
+
+
 
 
 
