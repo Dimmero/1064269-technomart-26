@@ -208,7 +208,6 @@ header {
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
-  text-decoration: underline;
 }
 
 .my-orders:hover,
@@ -256,6 +255,7 @@ header {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  text-transform: uppercase;
 }
 
 .info-text { 
@@ -276,6 +276,7 @@ header {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -283,6 +284,7 @@ header {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  text-transform: uppercase;
 }
 
 .red-button {
@@ -402,6 +404,7 @@ header {
 .filter-form legend {
   font-family: "PT Sans";
   font-size: 17px;
+  font-weight: bold;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
@@ -430,11 +433,56 @@ form label {
 
 /*CATALOG-ITEMS*/
 
+span {
+  font-family: PTSans;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+}
+
+.catalog-item-price-old {
+  font-family: PTSans;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #999999;
+}
+
+.catalog-item-price-new {
+  font-family: PTSans;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 18px;
+  color: #ffffff;
+}
+
 .visually-hidden {
   display: none;
 }
 
+.catalog-list {
+  list-style: none;
+}
 
+.catalog-item {
+  border: solid 1px #e5e5e5;
+}
+
+.pagination {
+  list-style: none;
+}
+
+.next-page {
+   border: solid 1px #e5e5e5;
+}
+
+.pagination a {
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+}
 
 
 
