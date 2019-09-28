@@ -13,6 +13,7 @@ a {
 
 header {
   background-color: #f4f7f9;
+  padding-bottom: 44px;
 }
 
 .container {
@@ -134,9 +135,16 @@ header {
   background-color: #518534;
 }
 
+.search-button {
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+}
+
+
 .search-input {
   font: inherit;
-  background-color: transparent;
+  background-color: #293449;
   border: none;
   color: #000000;
 }
@@ -155,6 +163,8 @@ header {
   margin-right: auto;
   margin-left: 17px;
 }
+
+
 
 .search-input:hover {
   background-color: #212a3a;
