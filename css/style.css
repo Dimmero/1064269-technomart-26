@@ -13,7 +13,7 @@ a {
 
 header {
   background-color: #f4f7f9;
-  padding-bottom: 44px;
+  padding-bottom: 60px;
 }
 
 .container {
@@ -55,25 +55,15 @@ header {
 .header-middle {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
 }
 
-.header-middle-text {
-  width: 200px;
-  margin-top: 49px;
-  margin-bottom: 42px;
-  padding-left: 52px;
-}
 
 .account {
   width: 281px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.account-link {
-
 }
 
 
@@ -99,6 +89,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding-left: 0;
+  margin: 0;
 }
 
 .header-nav > li {
@@ -108,11 +99,12 @@ header {
 .header-nav-link {
   text-align: center;
   display: block;
-  padding: 10px 0; 
+  padding-top: 22px;
+  padding-bottom: 26px; 
 }
 
 .header-nav-link:first-child {
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .header-nav-link:last-child {
@@ -136,11 +128,14 @@ header {
 }
 
 .search-button {
-  background-color: transparent;
+  background-color: #212a3a;
   border: none;
   opacity: 0.3;
 }
 
+.search-button:hover {
+  background-color: #212a3a;
+}
 
 .search-input {
   font: inherit;
@@ -164,14 +159,20 @@ header {
   margin-left: 17px;
 }
 
+.search-form:hover {
+  background-color: #212a3a;
+}
 
+.search-button:hover {
+  background-color: #ffffff;
+}
 
-.search-input:hover {
+.search-input:hover { 
   background-color: #212a3a;
 }
 
 .search-input:active {
-  background-color: transparent;
+  background-color: #212a3a;
 }
 
 .search-input:focus {
@@ -224,12 +225,20 @@ header {
   font-style: italic;
   line-height: 23px;
   color: #ee3643;
+  width: 196px;
+  margin-top: 49px;
+  margin-bottom: 44px;
+  padding-left: 53px;
 }
 
 .header-middle-contact {
   border: 3px solid #ffffff;
-  padding-top: 13px;
-  padding-bottom: 11px;
+  padding: 11px 49px 12px 71px;
+  margin-top: 46px;
+}
+
+.contact-address p {
+  margin: 0;
 }
 
 .contact-info {
@@ -296,12 +305,14 @@ header {
 
 .login {
   width: 121px;
-  padding: 14px 27px 11px 48px;
+  padding: 14px 27px 15px 48px;
+  margin-bottom: 67px;
 }
 
 .registration {
   width: 150px;
-  padding: 14px 25px 11px;
+  padding: 14px 25px 15px;
+  margin-bottom: 67px;
 }
 
 .login-name {
@@ -309,6 +320,7 @@ header {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
+  padding: 14px 25px 11px 24px;
 }
 
 .login-name:active {
@@ -658,6 +670,24 @@ span {
   color: #000000;
 }
 
+.account-list-catalog {
+  width: 299px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.account-list-catalog li:first-child {
+  padding-left: 17px;
+  list-style: none;
+}
+
+
+.account-list-catalog li:last-child {
+  padding-right: 71px;
+  padding-left: 5px;
+}
+
+
 /* MAIN */
 
 .info-contacts {
@@ -702,7 +732,9 @@ span {
   padding-left: 11px;
 }
 
-
+.social-media-list li {
+  padding: 10px;
+}
 
 
 
