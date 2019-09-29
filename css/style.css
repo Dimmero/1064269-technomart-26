@@ -658,17 +658,49 @@ span {
   color: #000000;
 }
 
+/* MAIN */
 
+.info-contacts {
+  display: flex;
+}
 
+.contact-info-block {
+  width: 519px;
+}
 
+.delivery {
+  width: 386px;
+}
 
+.info-text {
+  display: block;
+  margin-top: 25px;
+}
 
+.more-about-company {
+  display: block;
+  width: 220px;
+  text-align: center;
+  box-sizing: border-box;
+  margin-bottom: 86px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-top: 42px;
+}
 
+.get-lost {
+  display: block;
+  width: 300px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  margin-top: 40px;
+}
 
-
-
-
-
+.delivery-list li {
+  padding-left: 11px;
+}
 
 
 
