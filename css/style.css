@@ -111,7 +111,6 @@ header {
   padding-right: 10px;
 }
 
-
 .order {
   width: 150px;
   background-color: #63a63e;
@@ -133,9 +132,35 @@ header {
   opacity: 0.3;
 }
 
+.search-icon path {
+  fill: #6a7180;
+}
+
+.search-icon path:hover {
+  fill: #ffffff;
+}
+
 .search-button:hover {
   background-color: #212a3a;
 }
+
+.bookmarks:before {
+  content: "";
+  background-image: url(../img/icon-bookmark.svg))
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.bookmarks-icon path {
+  fill: #6a7180;
+}
+
+.bookmarks-icon path:hover,
+.bookmarks-icon path:focus {
+  fill: #ffffff;
+}
+
 
 .search-input {
   font: inherit;
