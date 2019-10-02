@@ -171,6 +171,10 @@ header {
   opacity: 1;
 }
 
+.bookmarks:active::before {
+  opacity: 0.5;
+}
+
 .cart:before {
   content: "";
   background-image: url(../img/icon-cart.svg);
@@ -186,6 +190,10 @@ header {
 .cart:hover::before,
 .cart:focus::before {
   opacity: 1;
+}
+
+.cart:active::before {
+  opacity: 0.5;
 }
 
 .order {
@@ -261,6 +269,14 @@ header {
   color: #32425c;
 }
 
+.contact-address:focus {
+  outline: inherit;
+}
+
+.header-middle-text:focus {
+  outline: 0;
+}
+
 .account {
   width: 281px;
   display: flex;
@@ -277,20 +293,25 @@ header {
   background-color: #ffffff;
   width: 121px;
 }
-/*  
-.login:before {
-  content: "";
-  background-image: url(../img/icon-login.svg);
-  display: block;
-  width: 20px;
-  height: 17px;
-  background-repeat: no-repeat;
-  position: absolute;
-  margin-left: 9px;
-} */
+
+.login-item:hover>.account-link {
+  color: #ee3643;
+}
+
+.account-link:focus {
+  color: #ee3643;
+}
+
+.login-item:active>.account-link {
+  color: #cacaca;
+}
 
 .login-item:hover .login-icon>path {
   fill: #32425c;
+}
+
+.login-item:active .login-icon>path {
+  fill: #c5c5c5;
 }
 
 .registration-item {
@@ -302,22 +323,20 @@ header {
   width: 150px;
 }
 
+.registration-item:hover>.account-link {
+  color: #ee3643;
+}
+
+.registration-item:active>.account-link {
+  color: #cacaca;
+}
+
 .account-link {
   font-family: Cuprum;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   background-color: #ffffff;
-}
-
-.account-link:hover,
-.account-link:hover {
-  color: #ee3643;
-}
-
-.login:active,
-.registration:active {
-  color: #cacaca;
 }
 
 .login-field {
@@ -389,7 +408,8 @@ header {
   box-shadow: inset 0 -5px #293449;
 }
 
-.header-nav-link:hover {
+.header-nav-link:hover,
+.header-nav-link:focus {
   background-color: #293449;
 }
 
@@ -539,6 +559,7 @@ header {
 
 .social {
   background-color: #212a3a;
+  border-radius: 50%;
 }
 
 .feedback-text {
