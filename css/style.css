@@ -273,10 +273,6 @@ header {
   outline: inherit;
 }
 
-.header-middle-text:focus {
-  outline: 0;
-}
-
 .account {
   width: 281px;
   display: flex;
@@ -422,6 +418,7 @@ header {
 
 .info-contacts {
   background-color: #ffffff;
+  padding-top: 82px;
 }
 
 .info,
@@ -433,10 +430,31 @@ header {
   text-transform: uppercase;
 }
 
+section.contacts-map-block {
+  margin-left: auto;
+}
+
+.contact-info-block h2,
+.contacts-map-block h2 {
+  margin: 0;
+}
+
 .info-text { 
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+}
+
+ul.delivery-list {
+  list-style: none;
+  margin-left: 0;
+}
+
+ul.delivery-list > li:before {
+  display: inline-block;
+  content: "\2014";
+  width: 25px;
+  margin-left: -1em;
 }
 
 .company {
@@ -444,6 +462,7 @@ header {
   font-size: 18px;
   line-height: 20px;
   color: #000000;
+  font-weight: bold;
 }
 
 .more-about-company {
@@ -452,6 +471,20 @@ header {
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
+  display: block;
+  width: 220px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
+
+.button {
+  padding-bottom: 86px;
+}
+
+.button-company {
+  padding-top: 25px;
 }
 
 .btn {
@@ -759,17 +792,6 @@ span {
 .info-text {
   display: block;
   margin-top: 25px;
-}
-
-.more-about-company {
-  display: block;
-  width: 220px;
-  text-align: center;
-  box-sizing: border-box;
-  margin-bottom: 86px;
-  padding-top: 14px;
-  padding-bottom: 12px;
-  margin-top: 42px;
 }
 
 .get-lost {
