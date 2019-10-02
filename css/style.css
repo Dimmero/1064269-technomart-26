@@ -416,6 +416,65 @@ header {
 
 /* MAIN */
 
+.advantages-list {
+
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.advantages-list-item h3 {
+  font-family: Cuprum;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px; 
+  color: #ffffff;
+}
+
+.advantages-list-item a {
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #32425c;
+  padding: 7px 15px 7px;
+  display: block;
+  width: 135px;
+}
+
+.vertical {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+
+.advantages-list-item {
+  width: 300px;
+}
+
+.material {
+  background-color: #ffbf47;
+}
+
+.tool {
+  background-color: #3bbce3;
+}
+
+.equipment {
+  background-color: #dc91d8;
+}
+
+.discount {
+  background-color: #8ed78f;
+}
+
+.shipping {
+  background-color: #ffc047;
+}
+
 .info-contacts {
   background-color: #ffffff;
   padding-top: 82px;
