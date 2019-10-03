@@ -384,14 +384,14 @@ header {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
-  padding-top: 22px;
-  padding-bottom: 26px;
+  padding-top: 19px;
+  padding-bottom: 22px;
   text-align: center;
   display: block;
 }
 
 .header-nav li:first-child a {
-  padding-left: 30px;
+  padding-left: 28px;
 }
 
 .header-nav li:last-child a {
