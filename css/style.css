@@ -58,7 +58,7 @@ header {
 
 .search-button {
   border: none;
-  padding: 11px;
+  padding: 11px 17px 12px;
   position: absolute;
   background-color: transparent;
 }
@@ -68,7 +68,7 @@ header {
   background-color: #293449;
   border: none;
   color: #000000;
-  padding-left: 45px;
+  padding-left: 50px;
   width: 100%;
 }
 
@@ -138,10 +138,10 @@ header {
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  width: 150px;
+  width: 135px;
   display: block;
   text-align: center;
-  padding: 12px 0;
+  padding: 13px 0 12px 15px;
 }
 
 .header-link:hover,
@@ -163,7 +163,6 @@ header {
   opacity: 0.3;
   background-repeat: no-repeat;
   position: absolute;
-  margin-left: 9px;
 }
 
 .bookmarks:hover::before,
@@ -184,7 +183,6 @@ header {
   opacity: 0.3;
   background-repeat: no-repeat;
   position: absolute;
-  margin-left: 9px;
 }
 
 .cart:hover::before,
@@ -199,6 +197,7 @@ header {
 .order {
   width: 150px;
   background-color: #63a63e;
+  padding: 13px 0 12px;
 }
 
 .order:hover,
