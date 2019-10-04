@@ -11,6 +11,29 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 header {
   background-color: #f4f7f9;
   padding-bottom: 60px;
@@ -416,12 +439,11 @@ header {
 /* MAIN */
 
 .advantages-list {
-
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
   flex-wrap: wrap;
-  list-style: none;
+  padding-top: 59px;
 }
 
 .advantages-list-item h3 {
@@ -431,20 +453,34 @@ header {
   line-height: 30px; 
   color: #ffffff;
   display: block;
-  width: 111px;
-  padding-left: 20px;
+  width: auto;
+  padding: 22px 0 11px 20px;
+  margin: 0;
 }
 
-.advantages-list-item a {
+ .advantages-list-item a {
+  background: rgba(0, 0, 0, 0.1);
   font-family: Cuprum;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
-  background-color: #32425c;
-  padding: 7px 20px 7px;
+  padding: 10px 0px 10px 0;
   display: block;
   width: 135px;
+  text-align: center;
+  margin-bottom: 22px;
+  margin-left: 20px;
+  border-radius: 3px;
+}
+
+.advantages-list-item a:hover,
+.advantages-list-item a:focus {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.advantages-list-item a:active {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .main-slider {
@@ -458,11 +494,11 @@ header {
 .vertical {
   display: flex;
   flex-direction: column;
-  align-content: flex-end;
 }
 
 .advantages-list-item {
   width: 300px;
+  position: relative;
 }
 
 .material {
@@ -471,20 +507,82 @@ header {
   flex-direction: column;
 }
 
+.material:after {
+  content: "";
+  background-image: url(../img/material.svg);
+  display: block;
+  width: 44px;
+  height: 65px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 31px;
+  right: 43px;
+}
+
 .tool {
   background-color: #3bbce3;
+}
+
+.tool:after {
+  content: "";
+  background-image: url(../img/tool.svg);
+  display: block;
+  width: 75px;
+  height: 61px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 33px;
+  right: 28px;
 }
 
 .equipment {
   background-color: #dc91d8;
 }
 
+.equipment:after {
+  content: "";
+  background-image: url(../img/equipment.svg);
+  display: block;
+  width: 78px;
+  height: 62px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 31px;
+  right: 31px;
+}
+
 .discount {
   background-color: #8ed78f;
+  margin-top: 20px;
+}
+
+.discount:after {
+  content: "";
+  background-image: url(../img/discount.svg);
+  display: block;
+  width: 59px;
+  height: 72px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 26px;
+  right: 45px;
 }
 
 .shipping {
   background-color: #ffc047;
+  margin-top: 20px;
+}
+
+.shipping:after {
+  content: "";
+  background-image: url(../img/shipping.svg);
+  display: block;
+  width: 78px;
+  height: 63px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 32px;
+  right: 31px;
 }
 
 .info-contacts {
@@ -655,14 +753,21 @@ ul.delivery-list > li:before {
   width: 238px;
 }
 
-.social-media-list {
+ul.social-media-list {
   list-style: none;
   display: flex;
-  padding-left: 161px;
+  width: 132px;
+  padding-left: 121px;
 }
 
-.social {
+.social-button {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #212a3a;
+  margin: 3px;
   border-radius: 50%;
 }
 
@@ -879,9 +984,6 @@ span {
   padding-left: 11px;
 }
 
-.social-media-list li {
-  padding: 10px;
-}
 
 
 
