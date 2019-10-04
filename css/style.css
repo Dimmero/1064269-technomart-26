@@ -512,6 +512,38 @@ header {
   position: relative;
 }
 
+.material:before {
+  content: "";
+  background-image: url(../img/new.png);
+  display: block;
+  width: 60px;
+  height: 59px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 10px;
+  right: -28px;
+  opacity: 1;
+  z-index: 999999999;
+}
+
+.material .flag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  
+  width: 60px;
+  height: 60px;
+  
+  text-indent: 1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.material .flag-new {
+  background: url("../img/flag-new.png") no-repeat 0 0;
+}
+
+
 .material {
   background-color: #ffbf47;
   display: flex;
