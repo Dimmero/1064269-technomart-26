@@ -494,12 +494,82 @@ header {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.main-slider {
+.slider {
+  display: block;
   padding-top: 20px;
   margin: 0;
   display: block;
   text-align: left;
   width: 620px;
+}
+
+.slider input[type="radio"] {
+ display: none;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-inner {
+  overflow: hidden
+}
+
+.slider-slides {
+  width: 300%;
+}
+
+.slider-slides img {
+  width: 620px;
+  height: 266px;
+  float: left;
+}
+
+.slider-controls {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-1:checked ~ .slider-controls label[for="btn-2"] {
+  background: url(../img/icon-left.png) no-repeat;
+  float: left;
+  margin: 0;
+  display: block;
+  height: 43px;
+  width: 41px;
+  position: absolute;
+  left: 25px;
+  top: 143px;
+  z-index: 999999;
+}
+
+#btn-2:checked ~ .slider-controls label[for="btn-1"],
+#btn-1:checked ~ .slider-controls label[for="btn-2"] {
+  background: url(../img/icon-right.png) no-repeat;
+  float: right;
+  display: block;
+  height: 43px;
+  width: 41px;
+  position: absolute;
+  top: 137px;
+  left: 591px;
+  z-index: 99999;
+}
+
+#btn-1:checked ~ .slider-inner .slider-slides {
+  transform: translate(0);
+}
+
+#btn-2:checked ~ .slider-inner .slider-slides {
+  transform: translate(-620px);
 }
 
 .vertical {
