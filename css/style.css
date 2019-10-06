@@ -673,11 +673,25 @@ header {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-left: 0px;
+  margin: 0;
 }
 
 .dev-list-item {
-  width: 220px;
+  width: 218px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #eaeaea;
+  min-height: 143px;
+  margin-bottom: 20px;
+}
+
+.services-list {
+  list-style: none;
+  padding-left: 0;
 }
 
 .info-contacts {
