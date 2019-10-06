@@ -1133,13 +1133,31 @@ span {
   top: 0;
   left: 0;
   width: 218px;
-  height: 88px;
   padding: 40px 0;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,1);
   z-index: 10;
 }
 
-.catalog-item .actions .buy,
+.catalog-item .actions .buy {
+
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  background-color: #63a63e;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  border-radius:3px;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+}
+
 .catalog-item .actions .bookmark {
   display: block;
   width: 129px;
@@ -1147,8 +1165,7 @@ span {
   margin-bottom: 7px;
   padding: 7px 0;
   background-color: #63a63e;
-  border: 3px solid #63a63e;
-  border-bottom-color: #367315;
+  box-shadow: inset 0px -3px 0 0 #367315;
   border-radius:3px;
   color: white;
   font-size: 14px;
@@ -1159,10 +1176,45 @@ span {
   text-transform: uppercase;
 }
 
+.buy:before {
+  content: "";
+  background-image: url(../img/icon-cart.svg);
+  display: block;
+  width: 15px;
+  height: 15px;
+  left: 12px;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.buy:hover::before,
+.buy:focus::before {
+  opacity: 1;
+}
+
+.catalog-item .buy:hover {
+  background-color: #5fbb2d;
+}
+
+.catalog-item .buy:active {
+  background-color: #518534;
+}
+
 .catalog-item .actions .bookmark {
   color: #32425c;
   background: white;
-  border-bottom-color: #63a63e;
+  border: solid 3px #63a63e;
+  box-shadow: none;
+}
+
+.catalog-item .bookmark:hover {
+  border: solid 3px #32425c;
+}
+
+.catalog-item .bookmark:active {
+  opacity: 0.3;
+  border: solid 3px #32425c;
 }
 
 .catalog-item .actions {
@@ -1171,6 +1223,14 @@ span {
 
 .catalog-item:hover .actions {
   display: block;
+}
+
+.catalog-item:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.buy:hover::before {
+  color: rgb(255, 255, 255);
 }
 
 .catalog-item:nth-child(4n) {
