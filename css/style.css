@@ -58,7 +58,7 @@ header {
 
 .logo {
   margin-bottom: -5px;
-  padding: 13px 0;
+  padding-top: 11px;
   text-align: center;
   display: block;
   width: 220px;
@@ -75,13 +75,17 @@ header {
   background-color: #ba2732;
 }
 
+.header-logo {
+  padding: 0px;
+}
+
 .footer-logo {
-  padding: 20px 0 25px;
+  padding: 19px 0 23px;
 }
 
 .search-button {
   border: none;
-  padding: 11px 17px 12px;
+  padding: 11px 17px;
   position: absolute;
   background-color: transparent;
 }
@@ -164,7 +168,7 @@ header {
   width: 135px;
   display: block;
   text-align: center;
-  padding: 13px 0 12px 15px;
+  padding: 12px 0 12px 15px;
 }
 
 .header-link:hover,
@@ -220,7 +224,7 @@ header {
 .order {
   width: 150px;
   background-color: #63a63e;
-  padding: 13px 0 12px;
+  padding: 13px 0 11px;
 }
 
 .order:hover,
@@ -245,8 +249,9 @@ header {
 .header-middle {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   padding-top: 46px;
+  margin-bottom: -4px;
 }
 
 .header-middle-text {
@@ -257,7 +262,8 @@ header {
   color: #ee3643;
   display: block;
   width: 204px;
-  padding-top: 2px; 
+  padding-top: 3px;
+  margin: 0; 
 }
 
 .header-middle .header-middle-text:first-child {
@@ -295,7 +301,7 @@ header {
 }
 
 .contact-address {
-  padding-top: 10px;
+  padding-top: 3px;
   font-family: Cuprum;
   font-size: 14px;
   line-height: 24px;
@@ -418,8 +424,8 @@ header {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
-  padding-top: 19px;
-  padding-bottom: 22px;
+  padding-top: 20px;
+  padding-bottom: 23px;
   text-align: center;
   display: block;
 }
@@ -584,31 +590,16 @@ header {
 
 .material:before {
   content: "";
-  background-image: url(../img/new.png);
+  background-image: url(../img/new-flag.png);
   display: block;
   width: 60px;
   height: 59px;
   background-repeat: no-repeat;
   position: absolute;
-  top: 10px;
-  right: -28px;
+  top: 0px;
+  right: 0px;
   opacity: 1;
   z-index: 999999999;
-}
-
-.material .flag {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  text-indent: 1000px;
-  overflow: hidden;
-  z-index: 20;
-}
-
-.material .flag-new {
-  background: url("../img/flag-new.png") no-repeat 0 0;
 }
 
 .material {
@@ -726,6 +717,13 @@ header {
   padding-bottom: 7px;
 }
 
+a.popular-item-link:hover,
+a.popular-item-link:focus,
+a.popular-item-link:active{
+  background-color: #ca2c37;
+  border: 3px solid #ca2c37;
+}
+
 .popular-item-button {
   display: block;
   text-align: center;
@@ -754,7 +752,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: solid 1px #eaeaea;
+  border: 1px solid #eaeaea;
   min-height: 143px;
   margin-bottom: 20px;
 }
@@ -762,7 +760,7 @@ header {
 .dev-list-item:hover,
 .dev-list-item:focus {
   box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
-  border: none;
+  border: 1px solid white;
 }
 
 .dev-list-item:active {
@@ -1126,6 +1124,12 @@ span {
 }
 
 .catalog-item h5 {
+  font-family: PTSans;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
   margin: 0;
 }
 
@@ -1142,22 +1146,18 @@ span {
   z-index: 20;
 }
 
-.catalog-item:before {
+.catalog-item .flag-new:before {
   content: "";
-  background-image: url(../img/new.png);
+  background-image: url(../img/new-flag.png);
   display: block;
   width: 60px;
   height: 59px;
   background-repeat: no-repeat;
   position: absolute;
-  top: 10px;
-  right: -31px;
+  top: 0px;
+  right: 0px;
   opacity: 1;
   z-index: 999999999;
-}
-
-.catalog-item .flag-new {
-  background: url("../img/flag-new.png") no-repeat 0 0;
 }
 
 .catalog-item .actions {
@@ -1167,10 +1167,6 @@ span {
 .catalog-item .image {
   width: 218px;
   height: 168px;
-}
-
-.catalog-item .image img {
-  max-width: 100%;
 }
 
 .catalog-category,
@@ -1220,7 +1216,6 @@ span {
 }
 
 .catalog-item .actions .buy {
-
   display: block;
   width: 129px;
   margin: 0 auto;
