@@ -320,6 +320,93 @@ header {
   list-style: none;
 }
 
+/* For catalog */
+.account-catalog {
+  width: 299px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.login-field {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #ffffff;
+  width: 299px;
+}
+
+.login-name {
+font-family: Cuprum;
+font-size: 21px;
+line-height: 21px;
+color: #000000;
+width: 100%;
+background-color: #ffffff;
+}
+
+.account .icon-user {
+  position: absolute;
+  left: 13px;
+  bottom: 38px;
+}
+
+.login-field:active .login-name {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.login-field:hover .icon-user>path {
+  fill: #32425c;
+}
+
+.login-field:active .icon-user>path {
+  fill: #c5c5c5;
+}
+
+.login-field:hover .icon-out>path {
+  fill: #32425c;
+}
+
+.login-field:active .icon-out>path {
+  fill: #c5c5c5;
+}
+
+.account .icon-out {
+  position: absolute;
+  right: 10px;
+  bottom: 38px;
+}
+
+.my-orders,
+.my-account {
+  font-family: Cuprum;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+a.my-orders {
+  padding: 6px 0 0 17px;
+}
+
+a.my-account {
+  margin-right: 71px;
+  padding-top: 6px;
+  
+}
+
+.my-orders:hover,
+.my-account:hover {
+  color: #ee3643;
+}
+
+.my-orders:active,
+.my-account:active {
+  color: rgba(50, 66, 92, 0.3);
+}
+
 .login-item {
   display: block;
   padding-top: 12px;
@@ -374,38 +461,6 @@ header {
   background-color: #ffffff;
 }
 
-.login-field {
-  list-style: none;
-}
-
-.login-name {
-  font-family: Cuprum;
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-}
-
-.login-name:active {
-  color: #cacaca;
-}
-
-.my-orders,
-.account {
-  font-family: Cuprum;
-  font-size: 16px;
-  line-height: 18px;
-  color: #32425c;
-}
-
-.my-orders:hover,
-.account:hover {
-  color: #ee3643;
-}
-
-.my-orders:active,
-.account:active {
-  color: #cacaca;
-}
 .header-nav {
   list-style: none;
   display: flex;
@@ -773,6 +828,10 @@ a.popular-item-link:active{
   padding-left: 0;
 }
 
+.services {
+  background-color: #f4f7f9;
+}
+
 .info-contacts {
   background-color: #ffffff;
   padding-top: 82px;
@@ -1075,6 +1134,10 @@ form label {
 }
 
 /*CATALOG-ITEMS*/
+
+.account {
+  width: 299px;
+}
 
 span {
   font-family: PTSans;
