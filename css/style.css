@@ -564,6 +564,9 @@ a.my-account {
   width: 620px;
 }
 
+.slider input[type="radio"] {
+ display: none;
+}
 
 .slider {
   position: relative;
@@ -1107,6 +1110,18 @@ ul.social-media-list {
   border: none;
 }
 
+.filter-form h3 {
+  width: 220px;
+  font-family: PTSans;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 0;
+  background-color: #f7f3ec;
+  padding: 10px 0 11px 18px;
+  border-radius: 3px; 
+}
+
 .filter-form legend {
   font-family: "PT Sans";
   font-size: 17px;
@@ -1136,6 +1151,18 @@ form label {
   background-color: #ffffff;
   border: 1px solid #e5e5e5;
 }
+
+.wrapper {  
+  display: flex;
+}
+
+.catalog-list {
+  padding-left: 0;
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 /*CATALOG-ITEMS*/
 
@@ -1184,6 +1211,7 @@ span {
   font-weight: bold;
   text-align: center;
   border: 1px solid #eaeaea;
+  font-size: 0px;
 }
 
 .catalog-item-image {
@@ -1456,4 +1484,14 @@ span {
 
 
 
+/* .catalog-list {
+    list-style: none;
+    width: 720px;
+}
 
+.catalog-list {
+    padding-left: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+} */
