@@ -564,9 +564,6 @@ a.my-account {
   width: 620px;
 }
 
-.slider input[type="radio"] {
- display: none;
-}
 
 .slider {
   position: relative;
@@ -1079,6 +1076,10 @@ ul.social-media-list {
 
 .breadcrumbs {
   list-style: none;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  padding-left: 0;
 }
 
 .breadcrumbs a,
@@ -1091,12 +1092,15 @@ ul.social-media-list {
 }
 
 .page-title {
-  background-color: #f2f6f8;
   font-family: Cuprum;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
+  font-weight: normal;
+  margin: 0;
+  background-color: #f2f6f8;
+  padding: 31px 0 31px 30px;
 }
 
 .filter-form fieldset {
