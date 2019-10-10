@@ -89,40 +89,39 @@
         </ul>
         <h2 class="page-title">Перфораторы</h2>
       </section>
-      
       <div class="wrapper container">
-        <aside class="filter">
+        <aside class="filter"> 
           <form class="filter-form" method="get" action="https://echo.htmlacademy.ru">
               <h3>Фильтр:</h3>    
             <fieldset class="developers">
               <legend class="dev-name">Производители</legend>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
-                  <label for="filter-bosch">
+                  <label class="checkbox-on" for="filter-bosch">
                   Bosch
                   </label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
-                  <label for="filter-interskol">
+                  <label class="checkbox-off" for="filter-interskol">
                   Интерскол
                   </label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
-                  <label for="filter-makita">
+                  <label class="checkbox-on" for="filter-makita">
                   Makita
                   </label>
                 </li>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
-                  <label for="filter-dewalt">
+                  <label class="checkbox-off" for="filter-dewalt">
                   Dewalt
                   </label>
                 </li>
-                <li class="filter-option">
+                <li class="filter-option underlined">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
-                  <label for="filter-hitachi">
+                  <label class="checkbox-off" for="filter-hitachi">
                   Hitachi
                   </label>
                 </li>
@@ -131,11 +130,11 @@
               <legend class="product-supply-name">Питание</legend>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" id="filter-accumulator" value="accumulator" checked>
-                <label for="filter-accumulator">Аккумуляторные</label>  
+                <label class="radio-on" for="filter-accumulator">Аккумуляторные</label>  
               </li>
               <li class="filter-option">
                 <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" id="filter-mains-supply" value="accumulator" >
-                <label for="filter-mains-supply">Сетевые</label>  
+                <label class="radio-off" for="filter-mains-supply">Сетевые</label>  
               </li>
             </fieldset>
             <button class="filter-button button" type="submit">Показать</button>  
@@ -144,9 +143,15 @@
         <div class="catalog-wrapper">
           <div class="sorting">
             <h3>Сортировка:</h3>
-            <a class="sorting-link price" href="">По цене</a>
+            <div class="sorting-option">
+            <a class="sorting-link price current" href="">По цене</a>
             <a class="sorting-link type" href="">По типу</a>
-            <a class="sorting-link function" href="">По функционалу</a> 
+            <a class="sorting-link function" href="">По функционалу</a>
+            <a class="sorting-link up" href=""><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#ee3643" d="M5.5 0L0 10h11z"/></svg>
+            </a> 
+            <a class="sorting-link down" href=""><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#c5c5c5" d="M5.5 10L0 0h11"/></svg>
+            </a>
+            </div>  
           </div>        
           <section class="catalog">
             <h2 class="visually-hidden">Список перфораторов</h2>
