@@ -271,11 +271,7 @@ header {
 }
 
 .header-middle-contact {
-  border: 3px solid #ffffff;
   display: block;
-  padding-top: 10px;
-  padding-bottom: 8px;
-  text-align: center;
 }
 
 .contact-address p {
@@ -283,10 +279,15 @@ header {
 }
 
 .contact-tel-link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 8px;
   font-family: Cuprum;
   font-size: 21px;
   line-height: 21px;
   color: #ee3643;
+  text-align: center;
+  border: 3px solid #ffffff;
 }
 
 .contact-tel-link:before {
@@ -330,20 +331,19 @@ header {
 
 .login-field {
   display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #ffffff;
-  width: 299px;
 }
 
 .login-name {
+display: block;
+width: 299px;
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: center;
+background-color: #ffffff;
 font-family: Cuprum;
 font-size: 21px;
 line-height: 21px;
 color: #000000;
-width: 100%;
-background-color: #ffffff;
 }
 
 .account .icon-user {
@@ -378,6 +378,12 @@ background-color: #ffffff;
   bottom: 38px;
 }
 
+.account-link .login-icon {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+}
+
 .my-orders,
 .my-account {
   font-family: Cuprum;
@@ -394,7 +400,6 @@ a.my-orders {
 a.my-account {
   margin-right: 71px;
   padding-top: 6px;
-  
 }
 
 .my-orders:hover,
@@ -408,12 +413,7 @@ a.my-account {
 }
 
 .login-item {
-  display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
   background-color: #ffffff;
-  width: 121px;
 }
 
 .login-item:hover>.account-link {
@@ -436,15 +436,6 @@ a.my-account {
   fill: #c5c5c5;
 }
 
-.registration-item {
-  display: block;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: center;
-  background-color: #ffffff;
-  width: 150px;
-}
-
 .registration-item:hover>.account-link {
   color: #ee3643;
 }
@@ -454,11 +445,26 @@ a.my-account {
 }
 
 .account-link {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 11px;
+  width: 121px;
   font-family: Cuprum;
   font-size: 21px;
-  line-height: 21px;
+  text-align: center;
   color: #000000;
   background-color: #ffffff;
+  position: relative;
+  box-sizing: border-box;
+}
+
+a.registration {
+    display: block;
+    width: 150px;
+}
+
+a.login {
+  padding-left: 13px;
 }
 
 .header-nav {
@@ -587,7 +593,6 @@ a.my-account {
 }
 
 .slider-controls {
-  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -598,8 +603,7 @@ a.my-account {
   cursor: pointer;
 }
 
-#btn-1:checked ~ .slider-controls label[for="btn-1"],
-#btn-1:checked ~ .slider-controls label[for="btn-2"] {
+#btn-1:checked ~ .slider-controls label[for="btn-1"] {
   background: url(../img/icon-left.png) no-repeat;
   float: left;
   margin: 0;
@@ -612,8 +616,7 @@ a.my-account {
   z-index: 999999;
 }
 
-#btn-2:checked ~ .slider-controls label[for="btn-1"],
-#btn-1:checked ~ .slider-controls label[for="btn-2"] {
+#btn-2:checked ~ .slider-controls label[for="btn-2"] {
   background: url(../img/icon-right.png) no-repeat;
   float: right;
   display: block;
@@ -1080,16 +1083,49 @@ ul.social-media-list {
 .breadcrumbs {
   list-style: none;
   display: flex;
-  width: 300px;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding-left: 0;
+  margin: 0;
+  flex-wrap: wrap;
 }
 
-.breadcrumbs a,
+.breadcrumbs a {
+  position: relative; 
+}
+
+.breadcrumbs li a:after {
+  content: "";
+  background-image: url(../img/icon-right-small.svg);
+  width: 8px;
+  height: 12px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 22px;
+  right: -25px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+  padding-top: 21px;
+}
+
+.breadcrumbs-current::after {
+  display: none;
+}
+
+.breadcrumbs a {
+  margin-right: 39px;
+  padding: 22px 0;
+  font-family: "PT Sans";
+  font-size: 13px;
+  color: #000000;
+  text-transform: uppercase;
+  display: block;
+}
+
 .breadcrumbs-current {
   font-family: "PT Sans";
   font-size: 13px;
-  line-height: 18px;
   color: #000000;
   text-transform: uppercase;
 }
@@ -1199,7 +1235,7 @@ form label {
 
 /*CATALOG-ITEMS*/
 
-.account {
+.account .account-catalog {
   width: 299px;
 }
 
