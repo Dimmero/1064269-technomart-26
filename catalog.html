@@ -421,11 +421,19 @@
       </footer>
 
     <!-- ADDING TO CART -->
-  <section class="cart-adding">
-    <h2 class="visually-hidden">Товар добавлен в корзину</h2>
-      <p class="item-add">Товар добавлен в корзину</p>
-      <a class="make-order" href=""> Оформить заказ</a>
-      <button class="modal-close" type="button">Продолжить покупки</button>
+  <section class="cart-adding container">
+    
+      <div class="modal-cart">
+        <h2 class="added">Товар добавлен в корзину</h2>
+        <div class="cart-button-wrapper">
+          <a class="make-order btn red-button" href=""> Оформить заказ</a>
+          <button class="make-order-button" type="button">Продолжить покупки</button>
+          <button class="modal-close-cart" type="button">
+              <span class="visually-hidden">Закрыть</span>
+          </button>
+        </div>  
+      </div>    
+    
   </section>
 </body>
 
