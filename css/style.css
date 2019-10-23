@@ -561,81 +561,6 @@ a.login {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.slider {
-  display: block;
-  padding-top: 20px;
-  margin: 0;
-  display: block;
-  text-align: left;
-  width: 620px;
-}
-
-.slider input[type="radio"] {
- display: none;
-}
-
-.slider {
-  position: relative;
-}
-
-.slider-inner {
-  overflow: hidden
-}
-
-.slider-slides {
-  width: 300%;
-}
-
-.slider-slides img {
-  width: 620px;
-  height: 266px;
-  float: left;
-}
-
-.slider-controls {
-  text-align: center;
-}
-
-.slider-controls label {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  cursor: pointer;
-}
-
-#btn-1:checked ~ .slider-controls label[for="btn-1"] {
-  background: url(../img/icon-left.png) no-repeat;
-  float: left;
-  margin: 0;
-  display: block;
-  height: 43px;
-  width: 41px;
-  position: absolute;
-  left: 25px;
-  top: 143px;
-  z-index: 999999;
-}
-
-#btn-2:checked ~ .slider-controls label[for="btn-2"] {
-  background: url(../img/icon-right.png) no-repeat;
-  float: right;
-  display: block;
-  height: 43px;
-  width: 41px;
-  position: absolute;
-  top: 137px;
-  left: 591px;
-  z-index: 99999;
-}
-
-#btn-1:checked ~ .slider-inner .slider-slides {
-  transform: translate(0);
-}
-
-#btn-2:checked ~ .slider-inner .slider-slides {
-  transform: translate(-620px);
-}
-
 .vertical {
   display: flex;
   flex-direction: column;
@@ -1807,6 +1732,7 @@ ul.pagination li a:active {
 .modal-map {
   top: 24px;
   position: fixed;
+  z-index: 999999999;
   display: none;
 }
 
@@ -1838,7 +1764,7 @@ ul.pagination li a:active {
   border-top: 7px solid #ee3643;
   display: block;
   box-sizing: border-box;
-  display: none;
+  
 }
 
 .modal-wrapper {
@@ -1851,6 +1777,7 @@ ul.pagination li a:active {
   left: 50%;
   padding: 48px 80px 0;
   margin-left: -312px;
+  display: none;
 }
 
 .modal-close {
@@ -1904,6 +1831,16 @@ ul.pagination li a:active {
   font-size: 13px;
   line-height: 18px;
   color: #a9a9a9;
+  outline: none;
+}
+
+.write-us textarea:hover,
+.write-us textarea:focus {
+  border-color: #b5b5b5;
+}
+
+.write-us textarea:active {
+  border-color: #ee3643;
 }
 
 .email-text {
@@ -1923,10 +1860,23 @@ input#user-email.email-field {
   color: #a9a9a9;
   border: solid 2px #dee3e4;
   border-radius: 3px;
+  outline: none;
 }
 
 input#user-name.login-field {
   margin-right: 20px;
+}
+
+input#user-name.login-field:hover,
+input#user-name.login-field:focus,
+input#user-email.email-field:hover,
+input#user-email.email-field:focus {
+  border: solid 2px #b5b5b5;
+}
+
+input#user-name.login-field:active,
+input#user-email.email-field:active {
+  border: solid 2px #ee3643;
 }
 
 .button-background {
@@ -1953,7 +1903,18 @@ input#user-name.login-field {
   color: #ffffff;
   text-transform: uppercase;
   padding: 10px 0;
+  cursor: pointer;
+  border-radius: 3px;
 }
+
+.send-button:hover {
+  background-color: #ca2c37;
+}
+
+.send-button:active {
+  background-color: #ba2732;
+}
+
 /* MODAL CATALOG CART */
 
 .modal-cart {
@@ -1964,7 +1925,8 @@ input#user-name.login-field {
   top: 410px;
   margin-left: 160px;
   width: 620px;
-  
+  z-index: 99;
+  display: none;
 }
 
 .added {
@@ -2059,16 +2021,67 @@ a.make-order:active {
   border:P none;
 }
 
+/* SLIDER index.html */
 
-
-/* .catalog-list {
-    list-style: none;
-    width: 720px;
+#slider {
+  position: relative;
+  top: 20px;
 }
 
-.catalog-list {
-    padding-left: 0;
-    margin-left: 20px;
-    display: flex;
-    flex-wrap: wrap;
-} */
+#slides article { 
+  float: left;
+  width: 620px;
+}
+
+#slides .image { 
+	width: 200%;
+	line-height: 0;
+}
+
+#overflow { 
+	width: 620px;
+	overflow: hidden;
+}
+
+article img { 
+	width: 620px;
+}
+
+#switch-1:checked ~ #controls label:nth-child(1), 
+#switch-2:checked ~ #controls label:nth-child(2) {
+	background: url(../img/icon-left.png) no-repeat; 
+  float: left;
+	display: block;
+	height: 40px;
+	width: 22px;
+}
+
+#switch-1:checked ~ #controls label:nth-child(2), 
+#switch-2:checked ~ #controls label:nth-child(1) {
+	background: url(../img/icon-right.png) no-repeat; 
+  float: right;
+	display: block;
+	height: 40px;
+	width: 22px;
+}
+
+.slider-all input { 
+	display: none;
+}
+
+#switch-1:checked ~ #slides .image{
+	margin-left: 0;
+}
+
+#switch-2:checked ~ #slides .image{
+	margin-left: -100%;
+}
+
+#controls { 
+	margin: -25% 0 0 0;
+	width: 100%;
+}
+
+.slider-all label { 
+	cursor: pointer;
+}
