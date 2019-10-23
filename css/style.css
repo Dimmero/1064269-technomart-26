@@ -2018,7 +2018,7 @@ a.make-order:active {
 
 .make-order-button:active {
   color: rgba(0, 0, 0, 0.3);
-  border:P none;
+  border: none;
 }
 
 /* SLIDER index.html */
@@ -2050,19 +2050,21 @@ article img {
 #switch-1:checked ~ #controls label:nth-child(1), 
 #switch-2:checked ~ #controls label:nth-child(2) {
 	background: url(../img/icon-left.png) no-repeat; 
-  float: left;
-	display: block;
-	height: 40px;
-	width: 22px;
+  display: block;
+  height: 40px;
+  width: 22px;
+  position: absolute;
+  left: 25px;
 }
 
 #switch-1:checked ~ #controls label:nth-child(2), 
 #switch-2:checked ~ #controls label:nth-child(1) {
 	background: url(../img/icon-right.png) no-repeat; 
-  float: right;
-	display: block;
-	height: 40px;
-	width: 22px;
+  display: block;
+  height: 40px;
+  width: 22px;
+  position: absolute;
+  right: 25px;
 }
 
 .slider-all input { 
@@ -2084,4 +2086,67 @@ article img {
 
 .slider-all label { 
 	cursor: pointer;
+}
+
+.slider-info {
+  position: relative;
+}
+
+.slider-heading {
+  position: absolute;
+  left: 24px;
+  font-family: Cuprum;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.slide-heading {
+  top: 26px;
+}
+
+.slider-text {
+  position: absolute;
+  left: 24px;
+  font-family: Cuprum;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+  margin: 0
+}
+
+.slide-text {
+  top: 64px;
+}
+
+.open-catalog {
+  position: absolute;
+  top: 205px;
+  left: 25px;
+  width: 193px;
+  font-family: Cuprum;
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  border: 1px solid #ee3643;
+  background-color: #ee3643;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  text-align: center;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.open-catalog:hover,
+.open-catalog:focus {
+  background-color: #ca2c37;
+  border-color: #ca2c37;
+}
+
+.open-catalog:active {
+  background-color: #ba2732;
+  border-color: #ba2732;
 }
