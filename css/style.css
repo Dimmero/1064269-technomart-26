@@ -731,7 +731,6 @@ a.popular-item-link:active {
   justify-content: space-between;
   padding-top: 20px;
   padding-left: 0px;
-  margin: 0;
 }
 
 .dev-list-item {
@@ -753,15 +752,6 @@ a.popular-item-link:active {
 .dev-list-item:active {
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
   opacity: 0.3;
-}
-
-.services-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.services {
-  background-color: #f4f7f9;
 }
 
 .info-contacts {
@@ -2149,4 +2139,64 @@ article img {
 .open-catalog:active {
   background-color: #ba2732;
   border-color: #ba2732;
+}
+
+.services-top-header {
+  font-family: Cuprum;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  margin: 0;
+  padding-top: 68px;
+}
+
+.services-top-text {
+  width: 398px;
+  margin: 0;
+  padding-top: 25px;
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.services-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.services {
+  background-color: #f4f7f9;
+}
+
+.service-header {
+  font-family: Cuprum;
+  font-size: 36px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #32425c;
+  margin: 0;
+}
+
+.service-text {
+  width: 275px;
+  font-family: PT Sans;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+
+.services-list li {
+  font-family: Cuprum;
+  font-size: 21px;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  padding: 17px 140px 18px 22px;
+  margin: 0;
+  background-color: #32425c;
+  width: 240px;
+  display: block;
+  box-sizing: border-box;
 }
