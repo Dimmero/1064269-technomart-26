@@ -156,8 +156,8 @@
         <li class="catalog-item">
           <a href="">
             <div class="actions">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
+              <button class="buy">Купить</button>
+              <button class="bookmark">В закладки</button>
             </div>
             <p class="catalog-item-image">
               <img src="img/bfg9000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 9000">
@@ -175,8 +175,8 @@
         <li class="catalog-item">
           <a href="">
             <div class="actions">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
+              <button class="buy">Купить</button>
+              <button class="bookmark">В закладки</button>
             </div>
             <p class="catalog-item-image">
               <img src="img/bfg3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -194,8 +194,8 @@
         <li class="catalog-item">
           <a class="catalog-item-link" href="">
             <div class="actions">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
+              <button class="buy">Купить</button>
+              <button class="bookmark">В закладки</button>
             </div>
             <p class="catalog-item-image">
               <img src="img/bfg6000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 6000">
@@ -214,8 +214,8 @@
           <a href="">
             <div class="flag flag-new">новинка</div>
             <div class="actions">
-              <a href="#" class="buy">Купить</a>
-              <a href="#" class="bookmark">В закладки</a>
+              <button class="buy">Купить</button>
+              <button class="bookmark">В закладки</button>
             </div>
             <p class="catalog-item-image">
               <img src="img/bfg2000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 2000">
@@ -241,60 +241,77 @@
       </section>
 
       <ul class="popular-dev-list container">
-        <li class="dev-list-item"><img src="img/bosch.png" width="126" height="37" alt="Логотип Bosch"></li>
-        <li class="dev-list-item"><img src="img/makita.png" width="123" height="40" alt="Логотип Makita"></li>
-        <li class="dev-list-item"><img src="img/dewalt.png" width="146" height="44" alt="Логотип Dewalt"></li>
-        <li class="dev-list-item"><img src="img/interskol.png" width="200" height="88" alt="Логотип Interskol"></li>
-        <li class="dev-list-item"><img src="img/hitachi.png" width="169" height="31" alt="Логотип Hitachi"></li>
-        <li class="dev-list-item"><img src="img/lg.png" width="121" height="73" alt="Логотип LG"></li>
-        <li class="dev-list-item"><img src="img/aeg.png" width="151" height="96" alt="Логотип AEG"></li>
-        <li class="dev-list-item"><img src="img/metabo.png" width="204" height="69" alt="Логотип Metabo"></li>
+        <li><a class="dev-list-item" href=""><img src="img/bosch.png" width="126" height="37" alt="Логотип Bosch"></a></li>
+        <li><a class="dev-list-item" href=""><img src="img/makita.png" width="123" height="40" alt="Логотип Makita"></a></li>
+        <li><a class="dev-list-item" href=""><img src="img/dewalt.png" width="146" height="44" alt="Логотип Dewalt"></a></li>
+        <li><a class="dev-list-item" href=""><img src="img/interskol.png" width="200" height="88" alt="Логотип Interskol"></a></li>
+        <li><a class="dev-list-item" href=""><img src="img/hitachi.png" width="169" height="31" alt="Логотип Hitachi"></a></li>
+        <li><a class="dev-list-item" href=""><img src="img/lg.png" width="121" height="73" alt="Логотип LG"></a></li>
+        <li><a class="dev-list-item" href=""><img src="img/aeg.png" width="151" height="96" alt="Логотип AEG"></a></li>
+        <li><a class="dev-list-item" href=""><img src="img/metabo.png" width="204" height="69" alt="Логотип Metabo"></a></li>
       </ul>
-
-      <section class="services">
-        <div class="services-wrapper container">
-          <h2 class="services-top-header">Сервисы</h2>
-          <p class="services-top-text">Хороший интернет-магазин отличается от плохого не только ценами!
-             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-             
-            <ul class="services-list">
-              <li>Доставка</li>
-              <li>Гарантия</li>
-              <li>Кредит</li>
-            </ul>
+      <div class="slider-2">
+      <div class="container">
+      <section class="service clearfix">
+          <h2>Сервисы</h2>
+          <p>
+            Хороший интернет-магазин отличается от плохого не только ценами!<br>
+            Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p> 
           <div class="service-slider">
-            <div class="service-delivery">
-              <h2 class="service-header">Доставка</h2>
-              <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                <img src="img\delivery.png">
+            <input type="radio" id="button-1" name="service-toggle" checked>
+            <input type="radio" id="button-2" name="service-toggle">
+            <input type="radio" id="button-3" name="service-toggle">
+            <div class="service-controls">
+              <label for="button-1">Доставка</label>
+              <label for="button-2">Гарантия</label>
+              <label for="button-3">Кредит</label>
             </div>
-            <div class="service-warranty">
-              <h2 class="service-header">Гарантия</h2>
-              <p class="service-text">Если купленный у нас товар поломается или заискрит, а также в случае пожара,
-                спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии.
-                Мы обменяем сгоревший товар на новый.</br>
-                Дом уж восстановите как-нибудь сами.</p>
-              <img src="img\warranty.png">
-            </div>
-            <div class="service-credit">
-              <h2 class="service-header">Кредит</h2>
-              <p class="service-text">Залезть в долговую яму стало проще! Кредитные консультанты придут к вам на помощь.</p>
-              <img src="img\credit.png">
-              <div class="submit-application">
-                <a href="">Отправить заявку</a>
+            <div class="service-info">
+              <div class="service-touch-button delivery-service">
+                <span>Доставка</span>
+                <p>
+                  Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно!
+                </p>
+                <p class="additional-text">
+                  Ведь мы неплохо заработаем,
+                  поднимая его на ваш на этаж!
+                </p>
+              </div>
+              <div class="service-touch-button warranty-service">
+                <span>Гарантия</span>
+                <p>
+                  Если купленный у нас товар поломается или заискрит,</br>
+                  а также в случае пожара, спровоцированного его вогаранием,</br>
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем</br>
+                  сгоревший товар на новый.
+                </p>
+                <p>
+                  Дом уж восстановите как нибудь сами.
+                </p>
+              </div>
+              <div class="service-touch-button credit-service">
+                <span>Кредит</span>
+                <p>
+                  Залезть в долговую яму стало проще!
+                </p>
+                <p>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a class=" submit-application red-button btn" href="">Отправить заявку</a>
               </div>
             </div>
           </div>
-        </div>  
-      </section>
-
+        </section>
+      </div>
+    </div>
       <div class="info-contacts container">
         <section class="contact-info-block">
           <h2 class="info">Компания &laquo;Техномарт&raquo;</h2>
           <p class="info-text">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
           <div class="delivery">
-            <p class="info-text delivery">Мы можем доставить ваш товар в самые отдалённые точки России! Техномарт работает со многими транспортными компаниями:</p>
+            <p class="info-text delivery-text">Мы можем доставить ваш товар в самые отдалённые точки России! Техномарт работает со многими транспортными компаниями:</p>
             <ul class="delivery-list">
               <li class="company">Деловые линии</li>
               <li class="company">Автотрейдинг</li>
