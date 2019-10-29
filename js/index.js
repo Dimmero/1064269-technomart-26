@@ -9,10 +9,6 @@ var formname = modalorder.querySelector("[name=name]");
 var formemail = modalorder.querySelector("[name=email]");
 var isStorageSupport = true;
 
-var map = document.querySelector(".show-map");
-var modalmap = document.querySelector(".modal-map");  
-var closemap = document.querySelector(".modal-close-map");
-
 getlost.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalorder.classList.add("modal-order-show");
@@ -44,6 +40,10 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+var map = document.querySelector(".show-map");
+var modalmap = document.querySelector(".modal-map");  
+var closemap = document.querySelector(".modal-close-map");
+
 map.addEventListener("click", function (evt) {
   evt.preventDefault();
   modalmap.classList.add("modal-map-show");
@@ -62,3 +62,6 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+
+

@@ -799,11 +799,12 @@ section.contacts-map-block {
 }
 
 .contacts-map-block .info-text {
+  padding-bottom: 29px;
   width: 179px;
 }
 
 .contacts-map-block img {
-  padding-top: 29px;
+  cursor: pointer;
 }
 
 ul.delivery-list {
@@ -1781,7 +1782,6 @@ ul.pagination li a:active {
   top: 0;
   left: 0;
   z-index: 1;
-
   margin: 0;
 }
 
@@ -1831,20 +1831,12 @@ ul.pagination li a:active {
   cursor: pointer;
 }
 
-.modal {
+.modal-order {
   position: fixed;
   background-color: #ffffff;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   border-top: 7px solid #ee3643;
-  display: block;
   box-sizing: border-box;
-}
-
-.modal-wrapper {
-  width: 620px;
-}
-
-.modal-order {
   width: 620px;
   bottom: 45px;
   left: 50%;
@@ -1961,9 +1953,7 @@ input#user-email.email-field:active {
 .button-background {
   background-color: #f4f4f4;
   width: 620px;
-  padding-top: 37px;
-  padding-bottom: 37px;
-  padding-left: 80px;
+  padding: 37px 80px;
   display: block;
   box-sizing: border-box;
   margin-top: 37px;
@@ -2006,6 +1996,10 @@ input#user-email.email-field:active {
   width: 620px;
   z-index: 99;
   display: none;  
+}
+
+.modal-cart-show {
+  display: block;
 }
 
 .added {
@@ -2064,7 +2058,7 @@ input#user-email.email-field:active {
   margin: 37px 20px 37px 80px;
 }
 
-.make-order-button {
+.continue-buy-button {
   display: block;
   border: none;
   font-family: Cuprum;
@@ -2091,11 +2085,11 @@ a.make-order:active {
   border-color: #ba2732;
 }
 
-.make-order-button:hover {
+.continue-buy-button:hover {
   color: #ca2c37;
 }
 
-.make-order-button:active {
+.continue-buy-button:active {
   color: rgba(0, 0, 0, 0.3);
   border: none;
 }
