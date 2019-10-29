@@ -1770,6 +1770,44 @@ ul.pagination li a:active {
   display: none;
 }
 
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
+.modal-map p {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  margin: 0;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.modal-map-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
 .modal-close-map {
   position: absolute;
   width: 21px;
@@ -1778,6 +1816,8 @@ ul.pagination li a:active {
   right: 9px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  z-index: 999;
 }
 
 .modal-close-map::after {
@@ -1798,7 +1838,6 @@ ul.pagination li a:active {
   border-top: 7px solid #ee3643;
   display: block;
   box-sizing: border-box;
-  
 }
 
 .modal-wrapper {
@@ -1811,7 +1850,13 @@ ul.pagination li a:active {
   left: 50%;
   padding: 48px 80px 0;
   margin-left: -310px;
+  z-index: 80;
   display: none;
+}
+
+.modal-order-show {
+  display: block;
+  animation: bounce 0.6s;
 }
 
 .modal-close {
