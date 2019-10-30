@@ -1299,6 +1299,13 @@ li.filter-option.underlined {
   text-transform: uppercase;
 }
 
+.developers ul,
+.product-supply ul {
+  padding-left: 0;
+}
+
+
+
 .developers,
 .product-supply {
   padding: 0;

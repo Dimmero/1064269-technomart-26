@@ -48,7 +48,7 @@
           <h1 class="header-middle-text">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
           <div class="contact-info">
             <div class="header-middle-contact">
-              <a class="contact-tel-link" href="tel:+7 (812) 555-05-55>">+7 (812) 555-05-55</a>
+              <a class="contact-tel-link" href="tel:+7(812)555-05-55">+7 (812) 555-05-55</a>
             </div>
             <div class="contact-address">
               <p tabindex="0">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
@@ -58,7 +58,7 @@
               <div class="login-field">
                 <svg class="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 20 18"><path fill="#c5c5c5" d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
                 <a class="login-name" href="">Равшан Джамшутович</a>
-                <svg class="icon-out" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+                <svg class="icon-out" xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17"><path fill="#c5c5c5" d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path fill="#c5c5c5" d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></svg>
               </div>
         
               <a class="my-orders" href="">Мои заказы</a>
@@ -116,6 +116,7 @@
             </div>  
             <fieldset class="developers">
               <legend class="dev-name">Производители:</legend>
+              <ul>
                 <li class="filter-option">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
                   <label class="checkbox-on" for="filter-bosch">
@@ -146,17 +147,20 @@
                   Hitachi
                   </label>
                 </li>
+              </ul>
             </fieldset>
             <fieldset class="product-supply">
               <legend class="product-supply-name">Питание:</legend>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" id="filter-accumulator" value="accumulator" checked>
-                <label class="radio-on" for="filter-accumulator">Аккумуляторные</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" id="filter-mains-supply" value="accumulator" >
-                <label class="radio-off" for="filter-mains-supply">Сетевые</label>
-              </li>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" id="filter-accumulator" value="accumulator" checked>
+                  <label class="radio-on" for="filter-accumulator">Аккумуляторные</label>
+                </li>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="supply" id="filter-mains-supply" value="accumulator" >
+                  <label class="radio-off" for="filter-mains-supply">Сетевые</label>
+                </li>
+              </ul>
             </fieldset>
             <button class="filter-button button" type="submit">Показать</button>
           </form>
@@ -193,7 +197,6 @@
                     <span class="catalog-category"> Перфоратор BOSCH</span>
                     <span class="catalog-item-title">BFG 3000</span>
                   </h5>
-                  </p>
                   <p class="catalog-item-price-old">22500 Р.</p>
                   <p class="catalog-item-price-new">15500 Р.</p>
                 </a>
@@ -212,7 +215,6 @@
                     <span class="catalog-category"> Перфоратор BOSCH</span>
                     <span class="catalog-item-title">BFG 6000</span>
                   </h5>
-                  </p>
                   <p class="catalog-item-price-old">30500 Р.</p>
                   <p class="catalog-item-price-new">25500 Р.</p>
                 </a>
@@ -232,7 +234,6 @@
                     <span class="catalog-category"> Перфоратор BOSCH</span>
                     <span class="catalog-item-title">BFG 2000</span>
                   </h5>
-                  </p>
                   <p class="catalog-item-price-old"></p>
                   <p class="catalog-item-price-new">12500 Р.</p>
                 </a>
@@ -251,7 +252,6 @@
                     <span class="catalog-category"> Перфоратор BOSCH</span>
                     <span class="catalog-item-title">BFG 3000</span>
                   </h5>
-                  </p>
                   <p class="catalog-item-price-old">22500 Р.</p>
                   <p class="catalog-item-price-new">15500 Р.</p>
                 </a>
@@ -271,7 +271,6 @@
                     <span class="catalog-category"> Перфоратор BOSCH</span>
                     <span class="catalog-item-title">BFG 6000</span>
                   </h5>
-                  </p>
                   <p class="catalog-item-price-old">30500 Р.</p>
                   <p class="catalog-item-price-new">25500 Р.</p>
                 </a>
@@ -290,7 +289,6 @@
                     <span class="catalog-category"> Перфоратор BOSCH</span>
                     <span class="catalog-item-title">BFG 2000</span>
                   </h5>
-                  </p>
                   <p class="catalog-item-price-old"></p>
                   <p class="catalog-item-price-new">12500 Р.</p>
                 </a>
@@ -310,7 +308,6 @@
                     <span class="catalog-category"> Перфоратор BOSCH</span>
                     <span class="catalog-item-title">BFG 3000</span>
                   </h5>
-                  </p>
                   <p class="catalog-item-price-old">22500 Р.</p>
                   <p class="catalog-item-price-new">15500 Р.</p>
                 </a>
@@ -329,7 +326,6 @@
                     <span class="catalog-category"> Перфоратор BOSCH</span>
                     <span class="catalog-item-title">BFG 6000</span>
                   </h5>
-                  </p>
                   <p class="catalog-item-price-old">30500 Р.</p>
                   <p class="catalog-item-price-new">25500 Р.</p>
                 </a>
@@ -348,7 +344,6 @@
                     <span class="catalog-category"> Перфоратор BOSCH</span>
                     <span class="catalog-item-title">BFG 2000</span>
                   </h5>
-                  </p>
                   <p class="catalog-item-price-old"></p>
                   <p class="catalog-item-price-new">12500 Р.</p>
                 </a>
@@ -367,9 +362,9 @@
       <article class="category-article">
         <div class="category-text container">
           <h2>Пара слов о перфораторах</h2>
-          <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.</br>
+          <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br />
             Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповёрта и отбойного молотка.
-            В</br> ассортиментном ряду есть выбор &laquo;трёхрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+            В<br /> ассортиментном ряду есть выбор &laquo;трёхрежимников&raquo;: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
       </article>
@@ -403,7 +398,7 @@
       <div class="footer-bottom-wrapper">
         <div class="footer-bottom container">
           <div class="copyright">
-            <p class="copyright-text">&copy; 2010-2019 Компания &laquo;Техномарт&raquo;</br> Все права защищены</p>
+            <p class="copyright-text">&copy; 2010-2019 Компания &laquo;Техномарт&raquo;<br /> Все права защищены</p>
           </div>
           <ul class="social-media-list">
             <li><a class="social-button" href="#"><span class="visually-hidden">Вконтакте</span>
