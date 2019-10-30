@@ -95,7 +95,7 @@ header {
   background-color: #293449;
   border: none;
   color: #000000;
-  padding-left: 50px;
+  padding-left: 47px;
   width: 100%;
 }
 
@@ -190,6 +190,7 @@ header {
   opacity: 0.3;
   background-repeat: no-repeat;
   position: absolute;
+  margin-left: 2px;
 }
 
 .bookmarks:hover::before,
